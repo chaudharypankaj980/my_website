@@ -1,0 +1,44 @@
+.home {
+  height: 100vh;
+  background: linear-gradient(to right, #0f172a, #1e293b);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.home-content h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.home-content p {
+  font-size: 20px;
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+.home-content button {
+  margin-top: 30px;
+  padding: 14px 32px;
+  border: none;
+  background: #38bdf8;
+  color: white;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.home-content button:hover {
+  background: #0284c7;
+}
+
+.button-container {
+  margin-right: 1%;
+  margin-left: 1%;
+  gap: 20px;
+}
