@@ -1,6 +1,6 @@
 import React from "react";
 import "./Navbar.css";
-import { Link, NavLink } from "react-router";
+import { Link, } from "react-router";
 import profile from "./profile-pic.jpg";
 
 const Navbar = () => {
