@@ -51,9 +51,8 @@ const About = () => {
           </div>
 
           {/* BUTTON */}
-          {/* <button className="about-btn">Download CV</button> */}
           <a href={my_cv} download className="resume-btn">
-          Download CV
+          <button className="about-btn">Download CV</button>
         </a>
         </div>
       </section>

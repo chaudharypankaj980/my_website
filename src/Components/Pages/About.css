@@ -152,20 +152,4 @@
   margin: 0 auto; /* Centers the image */
 }
 
-/* Resume Button */
 
-.resume-btn{
-  display:inline-block;
-  margin-top:40px;
-  padding:14px 30px;
-  background:#38bdf8;
-  color:#0133fb;
-  text-decoration:none;
-  border-radius:10px;
-  font-weight:600;
-  transition:0.3s;
-}
-
-.resume-btn:hover{
-  transform: translateY(-3px);
-}
