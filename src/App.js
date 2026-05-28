@@ -7,10 +7,12 @@ import Services from "./Components/Pages/Services";
 import Home from "./Components/Pages/Home";
 import Contact from "./Components/Pages/Contact";
 import About from "./Components/Pages/About";
+import ScrollToTop from "./Components/ScrollToTop";
 
 function App() {
   return (
-    <div>
+    <div className="app-shell">
+      <ScrollToTop />
       <Navbar />
 
       <Routes>

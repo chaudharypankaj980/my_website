@@ -1,44 +1,85 @@
 .home {
-  height: 100vh;
-  background: linear-gradient(to right, #0f172a, #1e293b);
+  min-height: calc(100vh - 100px);
   display: flex;
-  justify-content: center;
   align-items: center;
-  color: white;
+  justify-content: center;
+  padding: 90px 8% 110px;
+}
+
+.home-content {
+  width: min(980px, 100%);
   text-align: center;
-  padding: 20px;
+  padding: 46px;
+  border: 1px solid var(--border);
+  border-radius: 30px;
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.82), rgba(255, 255, 255, 0.68)),
+    linear-gradient(135deg, rgba(239, 91, 91, 0.14), rgba(124, 92, 255, 0.12));
+  box-shadow: var(--shadow);
+}
+
+.home-content .section-kicker {
+  margin: 0 auto;
 }
 
 .home-content h1 {
-  font-size: 60px;
-  margin-bottom: 20px;
+  margin: 22px auto 0;
+  max-width: 850px;
+  color: var(--text);
+  font-size: clamp(2.6rem, 7vw, 5.8rem);
+  line-height: 0.98;
 }
 
-.home-content p {
-  font-size: 20px;
+.home-content p:not(.section-kicker) {
   max-width: 700px;
-  margin: auto;
-  line-height: 1.6;
+  margin: 26px auto 0;
+  color: var(--muted);
+  font-size: 1.08rem;
+  line-height: 1.8;
 }
 
-.home-content button {
-  margin-top: 30px;
-  padding: 14px 32px;
-  border: none;
-  background: #38bdf8;
-  color: white;
-  font-size: 18px;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: 0.3s;
+.home-actions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 34px;
 }
 
-.home-content button:hover {
-  background: #0284c7;
+.home-btn {
+  min-height: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 24px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 850;
+  transition: 0.25s ease;
 }
 
-.button-container {
-  margin-right: 1%;
-  margin-left: 1%;
-  gap: 20px;
+.home-btn.primary {
+  background: var(--emerald);
+  color: #ffffff;
+}
+
+.home-btn.secondary {
+  border: 1px solid var(--border);
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.home-btn:hover {
+  transform: translateY(-3px);
+}
+
+@media (max-width: 620px) {
+  .home {
+    padding: 70px 6% 84px;
+  }
+
+  .home-content {
+    padding: 30px 18px;
+    border-radius: 24px;
+  }
 }

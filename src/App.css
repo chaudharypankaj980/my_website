@@ -4,10 +4,70 @@
   box-sizing: border-box;
 }
 
+:root {
+  --bg: #f7f9fb;
+  --panel: rgba(255, 255, 255, 0.82);
+  --panel-strong: #ffffff;
+  --text: #17202e;
+  --muted: #526173;
+  --soft: #7a8798;
+  --coral: #ef5b5b;
+  --emerald: #2f9c95;
+  --violet: #7c5cff;
+  --sun: #f4b942;
+  --border: rgba(23, 32, 46, 0.12);
+  --shadow: 0 24px 70px rgba(26, 37, 54, 0.12);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   overflow-x: hidden;
-  margin: 0;
-  padding: 0;
-  background: #0f172a;
-  height: 100vh;
+  min-width: 320px;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 8% 12%, rgba(239, 91, 91, 0.18), transparent 27rem),
+    radial-gradient(circle at 88% 14%, rgba(124, 92, 255, 0.15), transparent 29rem),
+    radial-gradient(circle at 52% 92%, rgba(47, 156, 149, 0.13), transparent 30rem),
+    linear-gradient(135deg, #f7f9fb 0%, #eef5f1 45%, #f8f3fb 100%);
+  color: var(--text);
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(23, 32, 46, 0.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(23, 32, 46, 0.055) 1px, transparent 1px);
+  background-size: 72px 72px;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent 70%);
+}
+
+a {
+  color: inherit;
+}
+
+.app-shell {
+  min-height: 100vh;
+}
+
+.section-title {
+  font-size: clamp(2rem, 5vw, 3.35rem);
+  line-height: 1.08;
+  letter-spacing: 0;
+}
+
+.section-kicker {
+  width: fit-content;
+  padding: 8px 13px;
+  border-radius: 999px;
+  color: var(--emerald);
+  border: 1px solid rgba(47, 156, 149, 0.24);
+  background: rgba(47, 156, 149, 0.09);
+  font-weight: 800;
+  font-size: 0.9rem;
 }
